@@ -26,7 +26,7 @@ import UIKit
 /**
  * The delegate of ExpandableLabel.
  */
-public protocol ExpandableLabelDelegate : NSObjectProtocol {
+@objc public protocol ExpandableLabelDelegate : NSObjectProtocol {
     func willExpandLabel(_ label: ExpandableLabel)
     func didExpandLabel(_ label: ExpandableLabel)
     func shouldExpandLabel(_ label: ExpandableLabel) -> Bool
